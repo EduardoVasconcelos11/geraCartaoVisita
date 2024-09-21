@@ -1,0 +1,94 @@
+/* Container do cartão */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 700px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Cartão */
+.card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  height: 20vh;
+  position: relative;
+}
+
+/* Logo */
+.logo {
+  margin-right: 10px;
+}
+
+/* Linha vertical entre a logo e o conteúdo */
+.vertical-line {
+  width: 1px;
+  height: 15vh;
+  border: 2px solid #D8D9FD;
+  margin-right: 20px;
+}
+
+/* Informações do cartão */
+.card-info p {
+  margin: 0;
+  line-height: 1.5;
+  color: #333;
+  padding: 10px 10px 0px 10px
+}
+
+/* Botão de download */
+.download-btn {
+  background-color: #E1E4E8;
+  /* Cor laranja */
+  color: #97A1AC;
+  /* Cor do texto preta */
+  border: 1px solid #000000;
+  /* Borda preta */
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 80%;
+  height: 5.3vh;
+  position: relative;
+  box-shadow: 0 4px 0 #97A1AC, 0 12px 15px rgba(0, 0, 0, 0.3);
+  /* Sombra curva no bottom */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.download-btn:hover {
+  background-color: #f7a600; /* Cor laranja */
+  color: #ffffff; /* Cor do texto preta */
+  border: 1px solid #000000; /* Borda preta */
+  box-shadow: 0 4px 0 #000000, 0 12px 15px rgba(0, 0, 0, 0.3);
+  transition: 1s;
+}
+
+/* Link RD Station */
+.rd-station-link {
+  margin-top: 15px;
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.rd-station-link:hover {
+  text-decoration: underline;
+}   

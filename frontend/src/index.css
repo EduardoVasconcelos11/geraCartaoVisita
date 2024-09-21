@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  color: #FFFFFF;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  width: Fill (1,441px)px;
+  height: Hug (84px)px;
+  padding: 24px 80px 24px 80px;
+  gap: 0px;
+  justify-content: space-between;
+  opacity: 0px;
+}
+
+header img {
+  height: 50px;
+}
+
+header h1 {
+  font-size: 18px;
+  color: #000;
+}
+
+/* Main Content (Corpo da página com duas colunas) */
+main {
+  flex: 1;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(93.82deg, #6C5AE0 -1.6%, #806EFF 105.56%); */
+  background: linear-gradient(93.82deg, #6C5AE0 -1.6%, #806EFF 105.56%);
+
+  padding: 60px 0px 0px 0px;
+}
+
+/* Container com duas colunas */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  margin-top: 40px;
+}
+
+.cabecalho {
+  /* width: 100%; */
+  background-color: none;
+
+  h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52.92px;
+    text-align: center;
+    align-items: center;
+  }
+
+  span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  span p {
+    font-family: Nunito Sans;
+    /* background-color: black; */
+    max-width: 600px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+  }
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+/* Estilos do Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 700px;
+  background-color: none;
+  padding: 30px;
+  border-radius: 10px;
+
+  label{
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+
+  }
+}
+
+/* Inputs de uma única linha (Nome) */
+form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Inputs com duas colunas (Telefone e Email) */
+form .form-row {
+  display: flex;
+  gap: 30px;
+}
+
+form .form-row .input-half {
+  flex: 1;
+}
+
+input, button {
+  width: 100%;
+  height: 36px;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+/* Botão de envio */
+button {
+  background-color: #FEC007;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  color: #000;
+}
+
+button:hover {
+  background-color: #e0a607;
+}
+
+/* Checkbox */
+form .form-agreement {
+  font-family: Nunito Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;  
+}
+
+form input[type="radio"] {
+  width: auto;
+  height: auto;
+  margin-right: 5px;
+}
+
+/* Links no texto */
+form a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Estilos gerais para o cartão */
+.cartao-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+
+.cartao-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cartao-content img {
+  height: 50px;
+}
+
+.cartao-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cartao-details p {
+  margin: 0;
+  color: #333;
+}
+
+.cartao-button {
+  margin-top: 20px;
+  background-color: #F1F1F1;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: not-allowed;
+  color: #888;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartao-button svg {
+  margin-right: 10px;
+}
+
+.cartao-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cartao-footer a {
+  text-decoration: none;
+  color: #3D77E4;
+  font-weight: bold;
+}
+
+.cartao-footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Rodapé */
+footer {
+  background: #F1F3F5;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  color: #636E7C;
+  font-weight: 700;
+}
+
+footer span {
+  font-weight: 400;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Ajustes para dispositivos menores */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    /* Coloca imagem e formulário em linha vertical em telas pequenas */
+  }
+
+  header h1 {
+    font-size: 16px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
